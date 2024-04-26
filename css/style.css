@@ -12,15 +12,62 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
 header {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F5F5F6;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #959BA4;
+
+}
+
+nav p:first-child {
+    color: black;
+}
+
+header img {
+    height: 23px;
+    width: 89px;
+
+}
+
+header button {
+    border: none;
+    width: 58px;
+    height: 33px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+}
+
+
+.header {
     width: 640px;
     height: 32px;
     display: flex;
-    /* justify-content: center; */
 }
 
-header>h1 {
+.header>h1 {
     font-size: 36px;
     font-weight: 700;
     color: #000000;
@@ -31,7 +78,6 @@ main {
     width: 640px;
     display: flex;
     justify-content: space-between;
-
 }
 
 main>div {
@@ -79,7 +125,9 @@ main>div>ul li:last-child {
 main>div>ul li:hover {
     background-color: #833AE0;
 }
-
+.activeli{
+    background-color: #833AE0;
+}
 main>div>div{
     width: 260px;
     height: 100px;
@@ -100,3 +148,9 @@ main>div>div>input{
     border: 0px;
     font-weight: 400;
     }
+.ofline img{
+        width: 600px;
+        height:600px ;
+        /* background-image: url('./../img/unnamed\ \(1\).jpg');  */
+        display: none;
+}

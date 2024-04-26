@@ -7,39 +7,64 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+<style>
+    input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+</style>
 
 <body>
     <header>
+        <img src="./img/logo.png" alt="bank logo">
+        <nav>
+            <p>BANK</p>
+            <p>BİZNES</p>
+            <p>İNVESTİSİYA</p>
+            <p>SIĞORTA</p>
+            <p>MOBİL</p>
+            <p>SƏFƏRLƏR</p>
+            <p>ƏYLƏNCƏ</p>
+        </nav>
+        <button>
+            GİRİŞ
+        </button>
+    </header>
+    <div class="header">
         <h1>Конвертер валют онлайн</h1>
-    </header>
+    </div>
     <main>
         <div class="left">
             <p>У меня есть</p>
             <ul>
-                <li>RUB</li>
+                <li class="activeli">RUB</li>
                 <li>USD</li>
                 <li>EUR</li>
                 <li>GBP</li>
             </ul>
             <div class="value">
-                <input type="number">
-                <p>1 RUB = 0.0135 USD</p>
+                <input type="number" placeholder="0">
+                <p>1RUB = 0.011 USD</p>
             </div>
         </div>
         <div class="right">
             <p>Хочу приобрести</p>
             <ul>
                 <li>RUB</li>
-                <li>USD</li>
+                <li class="activeli">USD</li>
                 <li>EUR</li>
                 <li>GBP</li>
             </ul>
             <div class="value">
-                <input type="number">
-                <p>1 USD = 73.8896 RUB</p>
+                <input type="number"placeholder="0">
+                <p>1USD = 93.537 RUB</p>
             </div>
         </div>
     </main>
+    <div class="ofline">
+        <img src="./img/unnamed (1).jpg" alt="">
+    </div>
     <script src="./js/main.js"></script>
 </body>
 
